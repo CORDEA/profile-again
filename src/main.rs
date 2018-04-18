@@ -11,12 +11,14 @@ fn main() {
             head {
                 meta charset="utf-8"
                 meta name="viewport"  content="width=device-width, initial-scale=1.0"
+
+                link href="./src/main.css" rel="stylesheet"
                 title {
                     "title"
                 }
             }
             body {
-                div {
+                div class="container" {
                     h1 "title"
                     div {
                         p {
