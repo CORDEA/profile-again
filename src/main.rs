@@ -20,16 +20,70 @@ fn main() {
                 }
             }
             body {
-                div class="container" {
-                    h1 "title"
+                div class="container text" {
+                    h1 class="title" "Profile of Yoshihiro Tanaka"
+                    div class="top" {
+                        "Yoshihiro Tanaka"
+                        br;
+                        "contact@cordea.jp"
+                    }
                     div {
+                        span class="top-section" {
+                            "Abstract. "
+                        }
+                        "Abstract"
+                    }
+                    div {
+                        p class="section" {
+                            "1. Introduction"
+                        }
                         p {
-                            "Abstract"
+                            (introduction)
                         }
                     }
                     div {
-                        h2 {
-                            "1. Introduction"
+                        p class="section" {
+                            "2. Skills"
+                        }
+                        p {
+                            "test"
+                        }
+                    }
+                    div {
+                        p class="section" {
+                            "3. Works"
+                        }
+                        p {
+                            "test"
+                        }
+                    }
+                    div {
+                        p class="section" {
+                            "4. Hobby"
+                        }
+                        p {
+                            "test"
+                        }
+                    }
+                    div {
+                        p class="section" {
+                            "5. Conclusions"
+                        }
+                        p {
+                            "test"
+                        }
+                    }
+                    div {
+                        p class="section" {
+                            "Acknowledgments"
+                        }
+                        p {
+                            "test"
+                        }
+                    }
+                    div {
+                        p class="section" {
+                            "References"
                         }
                         p {
                             "test"
