@@ -110,18 +110,10 @@ fn main() {
                     }
                     div {
                         p class="section" {
-                            "4. Hobby"
-                        }
-                        p {
-                            "test"
-                        }
-                    }
-                    div {
-                        p class="section" {
                             "5. Conclusions"
                         }
                         p {
-                            "test"
+                            ""
                         }
                     }
                     div {
@@ -129,7 +121,7 @@ fn main() {
                             "Acknowledgments"
                         }
                         p {
-                            "test"
+                            "Thank you for reading."
                         }
                     }
                     div {
@@ -137,7 +129,7 @@ fn main() {
                             "References"
                         }
                         p {
-                            "test"
+                            ""
                         }
                     }
                 }
