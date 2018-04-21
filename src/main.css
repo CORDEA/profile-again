@@ -34,3 +34,25 @@ body {
 .top-section {
     font-weight: 700;
 }
+
+table {
+    border-collapse: collapse;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.header {
+    border-bottom: 1px solid #000000;
+}
+
+.language {
+    width: 80px;
+}
+
+.experience {
+    text-align: end;
+}
+
+.description {
+    padding-left: 8px;
+}

@@ -24,8 +24,7 @@ fn read_file(filename: String) -> String {
 
 fn main() {
     let file = read_file("./src/skills.json".to_string());
-    println!("{}", file);
-    let data: Skills = serde_json::from_str(&file).unwrap();
+    let skills: Skills = serde_json::from_str(&file).unwrap();
     let introduction = "I am an android applications engineer at the CyberAgent Inc, and live in Tokyo. CyberAgent is my second company and I have been working since Sep 2017. I mainly use Java / Kotlin at work. As a hobby, developing using many languages, using Python, Nim, Golang, C#, JavaScript etc (Please see Skills for details). Native language is Japanese. English uses to read api document and to write commit message, issue, blog, but I am not good at talking.";
 
     let html = html! {
@@ -68,6 +67,24 @@ fn main() {
                         }
                         p {
                             "test"
+                            table {
+                                tr class="header" {
+                                    th class="language" "Language"
+                                    th "Work experience"
+                                    th "Hobby"
+                                    th "Description"
+                                }
+                                @for skill in skills.skills {
+                                    @if skill.main {
+                                    tr {
+                                        td (skill.title)
+                                        td class="experience" (skill.work)
+                                        td class="experience" (skill.hobby)
+                                        td class="description" (skill.description)
+                                    }
+                                }
+                            }
+                            }
                         }
                     }
                     div {

@@ -18,15 +18,16 @@ extern crate serde_json;
 
 #[derive(Deserialize)]
 pub struct Skills {
-    skills: Vec<Skill>,
+    pub skills: Vec<Skill>,
 }
 
 #[derive(Deserialize)]
 pub struct Skill {
     #[serde(rename(deserialize = "type"))]
-    stype: String,
-    title: String,
-    startYear: i16,
-    endYear: i16,
-    level: i8,
+    pub stype: String,
+    pub title: String,
+    pub description: String,
+    pub work: f64,
+    pub hobby: f64,
+    pub main: bool,
 }
