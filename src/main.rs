@@ -7,12 +7,14 @@ extern crate maud;
 extern crate serde_json;
 
 mod skill;
+mod work;
 
 use std::fs::File;
 use std::io::prelude::*;
 use maud::DOCTYPE;
 use maud::html;
 use skill::Skills;
+use work::Works;
 
 fn read_file(filename: String) -> String {
     let mut file = File::open(filename).expect("not found");
@@ -23,8 +25,10 @@ fn read_file(filename: String) -> String {
 }
 
 fn main() {
-    let file = read_file("./src/skills.json".to_string());
-    let skills: Skills = serde_json::from_str(&file).unwrap();
+    let skills_json= read_file("./src/skills.json".to_string());
+    let skills: Skills = serde_json::from_str(&skills_json).unwrap();
+    let works_json= read_file("./src/works.json".to_string());
+    let works: Works = serde_json::from_str(&works_json).unwrap();
     let introduction = "I am an android applications engineer at the CyberAgent Inc, and live in Tokyo. CyberAgent is my second company and I have been working since Sep 2017. I mainly use Java / Kotlin at work. As a hobby, developing using many languages, using Python, Nim, Golang, C#, JavaScript etc (Please see Skills for details). Native language is Japanese. English uses to read api document and to write commit message, issue, blog, but I am not good at talking.";
 
     let html = html! {
@@ -92,7 +96,16 @@ fn main() {
                             "3. Works"
                         }
                         p {
-                            "test"
+                            @for work in works.works {
+                                li {
+                                    b {
+                                        (work.name)
+                                    }
+                                    " - " (work.period)
+                                }
+                                p (work.content)
+                                p (work.description)
+                            }
                         }
                     }
                     div {
