@@ -29,7 +29,7 @@ fn main() {
     let skills: Skills = serde_json::from_str(&skills_json).unwrap();
     let works_json= read_file("./src/works.json".to_string());
     let works: Works = serde_json::from_str(&works_json).unwrap();
-    let introduction = "I am an android applications engineer at the CyberAgent Inc, and live in Tokyo. CyberAgent is my second company and I have been working since Sep 2017. I mainly use Java / Kotlin at work. As a hobby, developing using many languages, using Python, Nim, Golang, C#, JavaScript etc (Please see Skills for details). Native language is Japanese. English uses to read api document and to write commit message, issue, blog, but I am not good at talking.";
+    let introduction = "I am an android applications engineer at the CyberAgent Inc, and live in Tokyo. CyberAgent is my second company and I have been working since Sep 2017. I mainly use Java / Kotlin at work. As a hobby, developing using many programming languages, using Python, Nim, Golang, C#, JavaScript etc (Please see Skills for details). Native language is Japanese. English uses to read api document and to write commit message, issue, blog, but I am not good at talking.";
     let sub_langs = skills.skills
         .iter()
         .filter(|s| !s.main)
@@ -73,13 +73,13 @@ fn main() {
                     }
                     div {
                         p class="section" "2. Skills"
-                        p "I mainly use the following languages."
-                        p class="table-title" "Table 1. Languages list that i mainly use."
+                        p "I mainly use the following programming languages."
+                        p class="table-title" "Table 1. Programming languages list that i mainly use."
                         table {
                             tr class="header" {
-                                th class="language" "Language"
-                                th "Work experience"
-                                th "Hobby"
+                                th class="language" "Programming language"
+                                th "Work experience (years)"
+                                th "Hobby (years)"
                                 th "Description"
                             }
                             @for skill in skills.skills {
@@ -94,7 +94,7 @@ fn main() {
                             }
                         }
                         p {
-                            "I also use many other languages: "
+                            "I also use many other programming languages: "
                             (sub_langs)
                             "."
                         }
