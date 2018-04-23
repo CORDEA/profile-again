@@ -11,6 +11,7 @@ mod work;
 
 use std::fs::File;
 use std::io::prelude::*;
+use std::cmp::Ordering;
 use maud::DOCTYPE;
 use maud::html;
 use skill::Skills;
@@ -36,6 +37,17 @@ fn main() {
         .map(|s| s.title.clone())
         .collect::<Vec<_>>()
         .join(", ");
+    let mut langs = skills.skills
+        .iter()
+        .filter(|s| s.main)
+        .collect::<Vec<_>>();
+    langs.sort_by(|x, y| {
+        let mut state = y.work.partial_cmp(&x.work).unwrap();
+        if state == Ordering::Equal {
+            state = y.hobby.partial_cmp(&x.hobby).unwrap();
+        }
+        state
+    });
 
     let html = html! {
         (DOCTYPE)
@@ -74,14 +86,12 @@ fn main() {
                                 th "Hobby (years)"
                                 th "Description"
                             }
-                            @for skill in skills.skills {
-                                @if skill.main {
-                                    tr {
-                                        td (skill.title)
-                                        td class="experience" (skill.work)
-                                        td class="experience" (skill.hobby)
-                                        td class="description" (skill.description)
-                                    }
+                            @for skill in langs {
+                                tr {
+                                    td (skill.title)
+                                    td class="experience" (skill.work)
+                                    td class="experience" (skill.hobby)
+                                    td class="description" (skill.description)
                                 }
                             }
                         }

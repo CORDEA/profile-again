@@ -27,7 +27,7 @@ pub struct Skill {
     pub stype: String,
     pub title: String,
     pub description: String,
-    pub work: f64,
-    pub hobby: f64,
+    pub work: f32,
+    pub hobby: f32,
     pub main: bool,
 }
