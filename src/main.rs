@@ -16,7 +16,7 @@ use maud::html;
 use skill::Skills;
 use work::Works;
 
-fn read_file(filename: String) -> String {
+fn read_file(filename: &str) -> String {
     let mut file = File::open(filename).expect("not found");
     let mut content = String::new();
     file.read_to_string(&mut content).expect("");
@@ -25,11 +25,11 @@ fn read_file(filename: String) -> String {
 }
 
 fn main() {
-    let skills_json= read_file("./src/skills.json".to_string());
+    let skills_json= read_file("./src/skills.json");
     let skills: Skills = serde_json::from_str(&skills_json).unwrap();
-    let works_json= read_file("./src/works.json".to_string());
+    let works_json= read_file("./src/works.json");
     let works: Works = serde_json::from_str(&works_json).unwrap();
-    let introduction = "I am an android applications engineer at the CyberAgent Inc, and live in Tokyo. CyberAgent is my second company and I have been working since Sep 2017. I currently focus on development of Android native applications only, but always have interests widely, and I am still working on many things as a hobby. For example, Flutter, AWS, Docker, Font-end technologies etc. In programming language, I mainly use Java / Kotlin at work. As a hobby, developing using many programming languages, using Python, Nim, Golang, C#, JavaScript etc (Please see Skills for details). Native language is Japanese. English uses to read api document and to write commit message, issue, blog, but I am not good at talking.";
+    let introduction = read_file("./src/introduction.txt");
     let sub_langs = skills.skills
         .iter()
         .filter(|s| !s.main)
