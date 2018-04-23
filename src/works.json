@@ -1,0 +1,16 @@
+{
+    "works": [
+        {
+            "name": "Fenrir Inc.",
+            "period": "From Apr 2015 until Aug 2017",
+            "description": "Mainly around Android and Xamarin, I have developed applications such as iOS / Unity. Besides, I used  Golang, Python, Perl a bit.  I got the qualification of Xamarin Certified Mobile Developer when I was in this company. In addition, I was doing new employee training.",
+            "content": "Android / iOS / Xamarin applications engineer."
+        },
+        {
+            "name": "CyberAgent Inc.",
+            "period": "From Sep 2017",
+            "description": "I develop android applications using Kotlin, Java. Mainly used libraries is Databinding, Architecture Components, Dagger2, RxJava2, Retrofit, Glide, Groupie, Mockito, Truth etc.",
+            "content": "Android applications engineer."
+        }
+    ]
+}

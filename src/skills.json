@@ -1,0 +1,257 @@
+{
+  "skills": [
+    {
+      "type": "Language",
+      "title": "Nim",
+      "linkName": "nimrod",
+      "description": "Nim is new language. I have never used this at work, but often use this as a hobby.",
+      "work": 0,
+      "hobby": 3,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "Dart",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Python",
+      "description": "",
+      "work": 0,
+      "hobby": 3,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "Java",
+      "description": "I mainly use it  for work as development language of android.",
+      "work": 2.5,
+      "hobby": 3,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "Swift",
+      "description": "",
+      "work": 0,
+      "hobby": 1,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "Kotlin",
+      "description": "I mainly use it  for work and hobby as development language of android.",
+      "work": 0.5,
+      "hobby": 2,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "JavaScript",
+      "description": "",
+      "work": 0,
+      "hobby": 2,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "C#",
+      "linkName": "c%23",
+      "description": "I mainly use it for work as development language of Xamarin.",
+      "work": 2,
+      "hobby": 2,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "Go",
+      "description": "",
+      "work": 0,
+      "hobby": 1,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "F#",
+      "linkName": "f%23",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Groovy",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Objective-C",
+      "description": "",
+      "work": 1,
+      "hobby": 0.5,
+      "main": true
+    },
+    {
+      "type": "Language",
+      "title": "R",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Shell",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Vim script",
+      "linkName": "viml",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Erlang",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Fortran",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Factor",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Ruby",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Crystal",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Io",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "TypeScript",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Rust",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Clojure",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Perl 6",
+      "linkName": "perl%206",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Red",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Haskell",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Volt",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "ooc",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Haxe",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    },
+    {
+      "type": "Language",
+      "title": "Scala",
+      "description": "",
+      "work": 0,
+      "hobby": 0,
+      "main": false
+    }
+  ]
+}
