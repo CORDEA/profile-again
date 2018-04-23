@@ -74,7 +74,7 @@ fn main() {
                     div {
                         p class="section" "2. Skills"
                         p "I mainly use the following programming languages."
-                        p class="table-title" "Table 1. Programming languages list that i mainly use."
+                        p class="table-title" "Table 1. Programming languages list that I mainly use."
                         table {
                             tr class="header" {
                                 th class="language" "Programming language"
