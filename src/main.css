@@ -41,6 +41,11 @@ table {
     border-bottom: 1px solid #000000;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
     border-bottom: 1px solid #000000;
 }
