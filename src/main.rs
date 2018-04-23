@@ -45,31 +45,23 @@ fn main() {
                 meta name="viewport"  content="width=device-width, initial-scale=1.0"
 
                 link href="./src/main.css" rel="stylesheet"
-                title {
-                    "title"
-                }
+                title "Yoshihiro Tanaka's Profile"
             }
             body {
                 div class="container text" {
-                    h1 class="title" "Profile of Yoshihiro Tanaka"
+                    h1 class="title" "Yoshihiro Tanaka's Profile"
                     div class="top" {
                         "Yoshihiro Tanaka"
                         br;
                         "contact@cordea.jp"
                     }
                     div {
-                        span class="top-section" {
-                            "Abstract. "
-                        }
+                        span class="top-section" "Abstract. "
                         "Android applications engineer at the CyberAgent Inc. I love good codes, good tests, good team, respectable developers."
                     }
                     div {
-                        p class="section" {
-                            "1. Introduction"
-                        }
-                        p {
-                            (introduction)
-                        }
+                        p class="section" "1. Introduction"
+                        p (introduction)
                     }
                     div {
                         p class="section" "2. Skills"
@@ -99,16 +91,14 @@ fn main() {
                             "."
                         }
                     }
+                }
+                div class="container text" {
                     div {
-                        p class="section" {
-                            "3. Works"
-                        }
+                        p class="section" "3. Works"
                         p {
                             @for work in works.works {
                                 li {
-                                    b {
-                                        (work.name)
-                                    }
+                                    b (work.name)
                                     " - " (work.period)
                                 }
                                 p (work.content)
@@ -125,17 +115,11 @@ fn main() {
                         p "Please look at my social accounts if you want to know me more. For example, GitHub [1], Hatena Blog [2], Twitter [3], Qiita [4]."
                     }
                     div {
-                        p class="section" {
-                            "Acknowledgments"
-                        }
-                        p {
-                            "Thank you for reading."
-                        }
+                        p class="section" "Acknowledgments"
+                        p "Thank you for reading."
                     }
                     div {
-                        p class="section" {
-                            "References"
-                        }
+                        p class="section" "References"
                         p {
                             a href="https://github.com/CORDEA" "[1] Yoshihiro Tanaka. CORDEA (Yoshihiro Tanaka). https://github.com/CORDEA."
                             br;
