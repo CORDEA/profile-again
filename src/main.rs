@@ -117,12 +117,12 @@ fn main() {
                         }
                     }
                     div {
-                        p class="section" {
-                            "5. Conclusions"
-                        }
-                        p {
-                            ""
-                        }
+                        p class="section" "4. Changing jobs"
+                        p "Recently, I have receiving so many e-mails and linkedin's requests about changing jobs. I am reading most messages, and thanks for senders. However, my time isn't infinite, so it's difficult to replay to all."
+                    }
+                    div {
+                        p class="section" "5. Conclusions"
+                        p "Please look at my social accounts if you want to know me more. For example, GitHub [1], Hatena Blog [2], Twitter [3], Qiita [4]."
                     }
                     div {
                         p class="section" {
@@ -137,7 +137,13 @@ fn main() {
                             "References"
                         }
                         p {
-                            ""
+                            a href="https://github.com/CORDEA" "[1] Yoshihiro Tanaka. CORDEA (Yoshihiro Tanaka). https://github.com/CORDEA."
+                            br;
+                            a href="http://cordea.hatenadiary.com/" "[2] CORDEA. CORDEA blog. http://cordea.hatenadiary.com/."
+                            br;
+                            a href="https://twitter.com/_Cordea" "[3] Yoshihiro Tanaka. Yoshihiro Tanaka (@_Cordea) | Twitter. https://twitter.com/_Cordea."
+                            br;
+                            a href="https://qiita.com/CORDEA" "[4] CORDEA. CORDEA - Qiita. https://qiita.com/CORDEA."
                         }
                     }
                 }
