@@ -31,6 +31,7 @@ fn main() {
     let works_json= read_file("./src/works.json");
     let works: Works = serde_json::from_str(&works_json).unwrap();
     let introduction = read_file("./src/introduction.txt");
+    let jobs = read_file("./src/jobs.txt");
     let sub_langs = skills.skills
         .iter()
         .filter(|s| !s.main)
@@ -117,8 +118,8 @@ fn main() {
                         }
                     }
                     div {
-                        p class="section" "4. Changing jobs"
-                        p "Recently, I have receiving so many e-mails and linkedin's requests about changing jobs. I am reading most messages, and thanks for senders. However, my time isn't infinite, so it's difficult to replay to all."
+                        p class="section" "4. Job Opportunities"
+                        p (jobs)
                     }
                     div {
                         p class="section" "5. Conclusions"
