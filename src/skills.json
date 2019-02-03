@@ -22,14 +22,14 @@
       "title": "Python",
       "description": "",
       "work": 0,
-      "hobby": 3,
+      "hobby": 3.5,
       "main": true
     },
     {
       "type": "Language",
       "title": "Java",
       "description": "I mainly use it  for work as development language of android.",
-      "work": 2.5,
+      "work": 4,
       "hobby": 3,
       "main": true
     },
@@ -45,8 +45,8 @@
       "type": "Language",
       "title": "Kotlin",
       "description": "I mainly use it  for work and hobby as development language of android.",
-      "work": 0.5,
-      "hobby": 2,
+      "work": 2,
+      "hobby": 4,
       "main": true
     },
     {
@@ -71,7 +71,7 @@
       "title": "Go",
       "description": "",
       "work": 0,
-      "hobby": 1,
+      "hobby": 1.5,
       "main": true
     },
     {
