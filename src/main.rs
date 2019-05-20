@@ -70,7 +70,7 @@ fn main() {
                     }
                     div {
                         span class="top-section" "Abstract. "
-                        "Android applications engineer at the CyberAgent Inc. I love good codes, good tests, good team, respectable developers."
+                        "Android applications engineer at the Kyash Inc. I love good codes, good tests, good team, respectable developers."
                     }
                     div {
                         p class="section" "1. Introduction"
