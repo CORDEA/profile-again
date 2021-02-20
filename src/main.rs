@@ -168,7 +168,7 @@ fn main() {
                             "5. Conclusions"
                         }
                         p {
-                            "Please look at my social accounts if you want to know me more. For example, GitHub [1], Hatena Blog [2], Twitter [3], Scrapbox [4], Qiita [5]."
+                            "Please look at my social accounts if you want to know me more. For example, GitHub [1], LinkedIn [2], Twitter [3]."
                         }
                     }
                     div {
@@ -185,23 +185,15 @@ fn main() {
                         }
                         p {
                             a href="https://github.com/CORDEA" {
-                                "[1] Yoshihiro Tanaka. CORDEA (Yoshihiro Tanaka). https://github.com/CORDEA."
+                                "[1] CORDEA (Yoshihiro Tanaka). https://github.com/CORDEA."
                             }
                             br;
-                            a href="http://cordea.hatenadiary.com/" {
-                                "[2] CORDEA. CORDEA blog. http://cordea.hatenadiary.com/."
+                            a href="https://www.linkedin.com/in/cordea" {
+                                "[2] Yoshihiro Tanaka | LinkedIn. https://www.linkedin.com/in/cordea."
                             }
                             br;
                             a href="https://twitter.com/_Cordea" {
-                                "[3] Yoshihiro Tanaka. Yoshihiro Tanaka (@_Cordea) | Twitter. https://twitter.com/_Cordea."
-                            }
-                            br;
-                            a href="https://scrapbox.io/cordea" {
-                                "[4] CORDEA. CORDEA's project. https://scrapbox.io/cordea."
-                            }
-                            br;
-                            a href="https://qiita.com/CORDEA" {
-                                "[5] CORDEA. CORDEA - Qiita. https://qiita.com/CORDEA."
+                                "[3] Yoshihiro Tanaka (@_Cordea) | Twitter. https://twitter.com/_Cordea."
                             }
                         }
                     }
