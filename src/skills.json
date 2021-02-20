@@ -14,7 +14,7 @@
       "title": "Dart",
       "description": "",
       "work": 0,
-      "hobby": 0,
+      "hobby": 1,
       "main": false
     },
     {
@@ -45,8 +45,8 @@
       "type": "Language",
       "title": "Kotlin",
       "description": "I mainly use it  for work and hobby as development language of android.",
-      "work": 2,
-      "hobby": 4,
+      "work": 4,
+      "hobby": 6,
       "main": true
     },
     {
