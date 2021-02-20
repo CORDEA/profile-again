@@ -1,5 +1,3 @@
-#![feature(proc_macro)]
-
 #[macro_use]
 extern crate serde_derive;
 
@@ -54,45 +52,77 @@ fn main() {
         (DOCTYPE)
         html {
             head {
-                meta charset="utf-8"
-                meta name="viewport"  content="width=device-width, initial-scale=1.0"
+                meta charset="utf-8";
+                meta name="viewport" content="width=device-width, initial-scale=1.0";
 
-                link href="./src/main.css" rel="stylesheet"
-                title "Yoshihiro Tanaka's Profile"
+                link href="./src/main.css" rel="stylesheet";
+                title {
+                    "Yoshihiro Tanaka's Profile"
+                }
             }
             body {
                 div class="container text" {
-                    h1 class="title" "Yoshihiro Tanaka's Profile"
+                    h1 class="title" {
+                        "Yoshihiro Tanaka's Profile"
+                    }
                     div class="top" {
                         "Yoshihiro Tanaka"
                         br;
                         "contact@cordea.jp"
                     }
                     div {
-                        span class="top-section" "Abstract. "
+                        span class="top-section" {
+                            "Abstract. "
+                        }
                         "Android applications engineer at the Kyash Inc. I love good codes, good tests, good team, respectable developers."
                     }
                     div {
-                        p class="section" "1. Introduction"
-                        p (introduction)
+                        p class="section" {
+                            "1. Introduction"
+                        }
+                        p {
+                            (introduction)
+                        }
                     }
                     div {
-                        p class="section" "2. Skills"
-                        p "I mainly use the following programming languages."
-                        p class="table-title" "Table 1. Programming languages list that I mainly use."
+                        p class="section" {
+                            "2. Skills"
+                        }
+                        p {
+                            "I mainly use the following programming languages."
+                        }
+                        p class="table-title" {
+                            "Table 1. Programming languages list that I mainly use."
+                        }
                         table {
                             tr class="header" {
-                                th class="language" "Programming language"
-                                th "Work experience (years)"
-                                th "Hobby (years)"
-                                th "Description"
+                                th class="language" {
+                                    "Programming language"
+                                }
+                                th {
+                                    "Work experience (years)"
+                                }
+                                th {
+                                    "Hobby (years)"
+                                }
+                                th {
+                                    "Description"
+                                }
                             }
                             @for skill in langs {
                                 tr {
-                                    td (skill.title)
-                                    td class="experience" (skill.work)
-                                    td class="experience" (skill.hobby)
-                                    td class="description" (skill.description)
+                                    td {
+                                        (skill.title)
+                                    }
+                                    td class="experience" {
+                                        (skill.work)
+                                    }
+                                    td class="experience" {
+                                        (skill.hobby)
+                                    }
+                                    td class="description" {
+                                        (skill.description)
+                                    }
                                 }
                             }
                         }
@@ -105,42 +135,74 @@ fn main() {
                 }
                 div class="container text" {
                     div {
-                        p class="section" "3. Works"
+                        p class="section" {
+                            "3. Works"
+                        }
                         p {
                             @for work in works.works {
                                 li {
-                                    b (work.name)
+                                    b {
+                                        (work.name)
+                                    }
                                     " - " (work.period)
                                 }
-                                p (work.content)
-                                p (work.description)
+                                p {
+                                    (work.content)
+                                }
+                                p {
+                                    (work.description)
+                                }
                             }
                         }
                     }
                     div {
-                        p class="section" "4. Job Opportunities"
-                        p (jobs)
-                    }
-                    div {
-                        p class="section" "5. Conclusions"
-                        p "Please look at my social accounts if you want to know me more. For example, GitHub [1], Hatena Blog [2], Twitter [3], Scrapbox [4], Qiita [5]."
-                    }
-                    div {
-                        p class="section" "Acknowledgments"
-                        p "Thank you for reading."
-                    }
-                    div {
-                        p class="section" "References"
+                        p class="section" {
+                            "4. Job Opportunities"
+                        }
                         p {
-                            a href="https://github.com/CORDEA" "[1] Yoshihiro Tanaka. CORDEA (Yoshihiro Tanaka). https://github.com/CORDEA."
+                            (jobs)
+                        }
+                    }
+                    div {
+                        p class="section" {
+                            "5. Conclusions"
+                        }
+                        p {
+                            "Please look at my social accounts if you want to know me more. For example, GitHub [1], Hatena Blog [2], Twitter [3], Scrapbox [4], Qiita [5]."
+                        }
+                    }
+                    div {
+                        p class="section" {
+                            "Acknowledgments"
+                        }
+                        p {
+                            "Thank you for reading."
+                        }
+                    }
+                    div {
+                        p class="section" {
+                            "References"
+                        }
+                        p {
+                            a href="https://github.com/CORDEA" {
+                                "[1] Yoshihiro Tanaka. CORDEA (Yoshihiro Tanaka). https://github.com/CORDEA."
+                            }
                             br;
-                            a href="http://cordea.hatenadiary.com/" "[2] CORDEA. CORDEA blog. http://cordea.hatenadiary.com/."
+                            a href="http://cordea.hatenadiary.com/" {
+                                "[2] CORDEA. CORDEA blog. http://cordea.hatenadiary.com/."
+                            }
                             br;
-                            a href="https://twitter.com/_Cordea" "[3] Yoshihiro Tanaka. Yoshihiro Tanaka (@_Cordea) | Twitter. https://twitter.com/_Cordea."
+                            a href="https://twitter.com/_Cordea" {
+                                "[3] Yoshihiro Tanaka. Yoshihiro Tanaka (@_Cordea) | Twitter. https://twitter.com/_Cordea."
+                            }
                             br;
-                            a href="https://scrapbox.io/cordea" "[4] CORDEA. CORDEA's project. https://scrapbox.io/cordea."
+                            a href="https://scrapbox.io/cordea" {
+                                "[4] CORDEA. CORDEA's project. https://scrapbox.io/cordea."
+                            }
                             br;
-                            a href="https://qiita.com/CORDEA" "[5] CORDEA. CORDEA - Qiita. https://qiita.com/CORDEA."
+                            a href="https://qiita.com/CORDEA" {
+                                "[5] CORDEA. CORDEA - Qiita. https://qiita.com/CORDEA."
+                            }
                         }
                     }
                 }
