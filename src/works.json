@@ -9,15 +9,20 @@
         {
             "name": "CyberAgent Inc.",
             "period": "From Sep 2017 until May 2019",
-            "description": "I was developing android application of blog service using Kotlin, Java and I was a tech lead of the android team with 5-7 engineers. Mainly used libraries is Databinding, Architecture Components, Dagger2, RxJava2, Retrofit, Glide, Groupie, Mockito, Truth etc.",
+            "description": "I was developing android application of blog service using Kotlin, Java and I was a tech lead of the android team with 5-7 engineers.",
             "content": "Android applications engineer."
         },
         {
             "name": "Kyash Inc.",
-            "period": "From May 2019",
-            "description": "I develop android application using Kotlin.",
+            "period": "From May 2019 until Feb 2021",
+            "description": "I was developing android application of mobile banking service using Kotlin.",
+            "content": "Android applications engineer."
+        },
+        {
+            "name": "LINE Corporation",
+            "period": "From Feb 2021",
+            "description": "",
             "content": "Android applications engineer."
         }
-
     ]
 }
